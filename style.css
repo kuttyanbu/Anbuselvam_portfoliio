@@ -5,6 +5,7 @@
     box-sizing: border-box;
 }
 
+
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background: #0d1117;
@@ -357,30 +358,71 @@ body {
   }
 
   /* === SKILLS SECTION === */
-  .skills-section {
-    padding: 80px 30px;
-  }
+  /* ===== SKILLS SECTION (Mobile) ===== */
+.skills-section {
+  padding: 80px 30px;
+  text-align: center;
+}
 
-  .skills-section .section-title {
-    font-size: 28px;
-    margin-bottom: 20px;
-  }
+.skills-section .section-title {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
 
-  .skills-filter {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
-    margin-bottom: 30px;
-  }
+.skills-filter {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 30px;
+}
 
-  .filter-btn {
-    font-size: 13px;
-    padding: 6px 14px;
-  }
+.filter-btn {
+  font-size: 13px;
+  padding: 6px 14px;
+  border-radius: 20px;
+  background: none;
+  border: 2px solid #3fbfff;
+  color: #3fbfff;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
 
-  .skills-grid {
-    grid-template-columns: 1fr;
-  }
+.filter-btn.active,
+.filter-btn:hover {
+  background-color: #3fbfff;
+  color: #0d1117;
+}
+
+/* Skill cards as full-width on small screens */
+.skills-grid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.skill-card {
+  width: 100%;
+  max-width: 300px;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 14px 20px;
+  border-radius: 12px;
+  font-size: 15px;
+  font-weight: 600;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(6px);
+  transition: 0.3s ease;
+  text-align: center;
+}
+
+.skill-card:hover {
+  transform: scale(1.04);
+  box-shadow: 0 0 12px #3fbfff;
+  background: rgba(63, 191, 255, 0.08);
+}
+
+
 
   /* === PROJECTS SECTION === */
   .projects-section {
