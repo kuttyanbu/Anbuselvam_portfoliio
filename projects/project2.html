@@ -1,0 +1,77 @@
+<!-- ========== SAMPLE PROJECT DETAIL PAGE (project1.html) ========== -->
+<!-- Save this as /projects/project1.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Onion Shelf Life Prediction</title>
+  <link rel="stylesheet" href="../style.css">
+  <style>
+    .project-detail {
+      padding: 120px 60px;
+      background-color: #0d1117;
+      color: white;
+    }
+    .project-detail h1 {
+      font-size: 36px;
+      color: #3fbfff;
+      margin-bottom: 20px;
+    }
+    .project-detail p {
+      font-size: 18px;
+      color: #ccc;
+      line-height: 1.8;
+      margin-bottom: 30px;
+    }
+    .project-images {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      margin-bottom: 30px;
+    }
+    .project-images img {
+      width: 100%;
+      max-width: 500px;
+      border-radius: 10px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.3);
+    }
+    .project-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .project-buttons a {
+      padding: 12px 20px;
+      background: #3fbfff;
+      color: #0d1117;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 8px;
+      transition: background 0.3s;
+    }
+    .project-buttons a:hover {
+      background: #61dafb;
+    }
+  </style>
+</head>
+<body>
+  <div class="project-detail">
+    <h1>🔬 Onion Shelf Life & Spoilage Prediction</h1>
+    <p>
+      A MATLAB-based system integrating thermal imaging and machine learning to assess the internal spoilage and estimate the shelf life of onions (Allium cepa). Utilizes CNNs and GUI for prediction using thermal image datasets from 0 to 50 days.
+    </p>
+
+    <div class="project-images">
+      <img src="../images/onion1.png" alt="Thermal Image Sample 1">
+      <img src="../images/onion2.png" alt="Thermal Image Sample 2">
+    </div>
+
+    <div class="project-buttons">
+      <a href="https://drive.google.com/file/d/your-report-id/view" target="_blank">📄 View Report</a>
+      <a href="https://drive.google.com/drive/folders/your-folder-id" target="_blank">🔗 Drive Folder</a>
+      <a href="https://github.com/kuttyanbu/onion-project" target="_blank">💻 View Code</a>
+    </div>
+  </div>
+</body>
+</html>
